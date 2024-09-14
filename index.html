@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="./src/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <style type="text/css">
+        :root {
+            --bulma-primary: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
+            --bulma-primary-base: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
+            --bulma-primary-rgb: 45, 93, 239;
+            --bulma-primary-h: 225deg;
+            --bulma-primary-s: 86%;
+            --bulma-primary-l: 56%;
+            --bulma-button-h: 0;
+            --bulma-button-s: 0;
+            --bulma-button-l: 100%;
+            /* --bulma-text: #fff; */
+            /*--bulma-primary-00-l: 1%;
+            --bulma-primary-05-l: 6%;
+            --bulma-primary-10-l: 11%;
+            --bulma-primary-15-l: 16%;
+            --bulma-primary-20-l: 21%;*/
+        }
+
+        body {
+            font-family: "Space Grotesk", sans-serif;
+        }
+
+        h1 {
+            font-size: 56px;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 22px;
+            font-weight: 300;
+        }
+
+        .button {
+            color: hsla(var(--bulma-button-h), var(--bulma-button-s), var(--bulma-button-l), 1)
+        }
+
+        .why h2 {
+            color: #000;
+            font-family: "Space Grotesk";
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 64px; /* 133.333% */
+            letter-spacing: -2px;
+        }
+
+        .why p {
+            color: #000;
+            font-family: Outfit;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            letter-spacing: -0.96px;
+        }
+
+        .why .container {
+            /*position: relative;*/
+        }
+
+        .why .logo {
+            position: relative;
+        }
+
+        .why .container .columns {
+            height: 746px;;
+        }
+
+        .column span {
+            display: block;
+        }
+        .learning-container {
+            border: dotted 2px var(--bulma-primary);
+            min-height: 547px;
+            border-radius: 40px;
+            background: url('/layout-bg.svg');
+
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .logos-galaxy {
+            /* background: url('/logos-galaxy.svg'); */
+/* 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center; */
+            /* height: 746px; */
+        }
+
+        .logos-galaxy-desktop {
+            position: relative;
+            right: -30px;
+            top: 30px;
+            min-width: 650px;
+        }
+
+        .why .text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 54px;
+        }
+
+        .go-to-learning {
+            margin-top: 10px;
+        }
+    </style>
+  </head>
+  <body>
+      <nav class="navbar">
+          <div class="container">
+              <div class="logo">
+                  <img src="/logo.svg" />
+              </div>
+          </div>
+      </nav>
+      <section class="learning">
+          <div class="container learning-container is-flex is-align-items-center is-justify-content-center">
+              <div class="columns">
+                  <div class="column has-text-centered">
+                      <h1>
+                          <span>Aprende cómo escalar</span>
+                          <span>productos con design tokens</span>
+                      </h1>
+                      <p>
+                      <span>Una formación en español para que domines el diseño, distribución y</span>
+                      <span>aplicación de la metodología de design tokens</span>
+                      </p>
+                      <p class="go-to-learning">
+                        <button class="button is-primary">Ir a la formación --></button>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="why">
+        <div class="container">
+            <div class="columns is-vcentered">
+                <div class="column text is-flex is-half">
+                    <h2>Por qué Design Tokens</h2>
+                    <p>
+                        Los design tokens se han establecido como la metodología por excelencia para comunicar las decisiones de diseño entre marcas, equipos y tecnologías. Su potencial se basa en la idea de crear una fuente de la verdad, una guía común desde la que se distribuyan todas las decisiones.
+                    </p>
+                    <p>
+                        Si te interesa optimizar los tiempos de desarrollo, la comunicación entre equipos o los sistemas de diseño en empresas en escala, este curso es para tí.
+                    </p>
+                </div>
+
+                <div class="column logo is-half is-hidden-mobile">
+                    <img class="logos-galaxy-desktop" src="/logos-galaxy.svg"/>
+                </div>
+
+                <div class="column logo is-half is-hidden-desktop">
+                    <img class="logos-galaxy" src="/logos-galaxy.svg"/>
+                </div>
+            </div>
+        </div>
+      </section>
+  </body>
+</html>
