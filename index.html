@@ -10,26 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <style type="text/css">
-        :root {
-            --bulma-primary: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
-            --bulma-primary-base: hsla(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l), 1);
-            --bulma-primary-rgb: 45, 93, 239;
-            --bulma-primary-h: 225deg;
-            --bulma-primary-s: 86%;
-            --bulma-primary-l: 56%;
-            --bulma-button-h: 0;
-            --bulma-button-s: 0;
-            --bulma-button-l: 100%;
-            /* --bulma-text: #fff; */
-            /*--bulma-primary-00-l: 1%;
-            --bulma-primary-05-l: 6%;
-            --bulma-primary-10-l: 11%;
-            --bulma-primary-15-l: 16%;
-            --bulma-primary-20-l: 21%;*/
-        }
-
         body {
             font-family: "Space Grotesk", sans-serif;
+            background: #FCFDFF;
         }
 
         h1 {
@@ -42,23 +25,28 @@
             font-weight: 300;
         }
 
-        .button {
-            color: hsla(var(--bulma-button-h), var(--bulma-button-s), var(--bulma-button-l), 1)
-        }
-
-        .why h2 {
+        h2 {
             color: #000;
             font-family: "Space Grotesk";
             font-size: 48px;
             font-style: normal;
             font-weight: 500;
-            line-height: 64px; /* 133.333% */
+            line-height: 64px;
             letter-spacing: -2px;
         }
 
-        .why p {
+        h3 {
             color: #000;
-            font-family: Outfit;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -2px;
+        }
+
+        p {
+            color: #000;
+            /* font-family: Outfit; */
             font-size: 24px;
             font-style: normal;
             font-weight: 300;
@@ -66,46 +54,62 @@
             letter-spacing: -0.96px;
         }
 
-        .why .container {
-            /*position: relative;*/
-        }
-
-        .why .logo {
-            position: relative;
+        .pa-40 {
+            padding: 40px;
         }
 
         .why .container .columns {
-            height: 746px;;
+            min-height: 746px;;
         }
 
         .column span {
             display: block;
         }
-        .learning-container {
-            border: dotted 2px var(--bulma-primary);
-            min-height: 547px;
-            border-radius: 40px;
-            background: url('/layout-bg.svg');
 
+        .dst-dotted-container {
+            border: dotted 2px #2D5DEF;
+            border-radius: 40px;
+        }
+
+        .pricing-container {
+            min-height: 459px;
+        }
+
+        .pricing-container-salient {
+            min-height: 499px;
+            margin-top: -39px;
+        }
+
+        .pricing-title {
+            margin-bottom: 80px;
+        }
+
+        .pricing-section {
+            margin-top: 40px;
+        }
+
+        .dst-dotted-container.primary {
+            background: url('/layout-bg.svg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
         }
 
-        .logos-galaxy {
-            /* background: url('/logos-galaxy.svg'); */
-/* 
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center; */
-            /* height: 746px; */
+        .dst-dotted-container.secondary {
+            background: linear-gradient(117deg, rgba(233, 241, 255, 0.40) 19.26%, #FFF 106.18%);
+        }
+
+        .learning-container {
+            min-height: 547px;
+        }
+
+        .other-companies-container {
+            min-height: 484px;
         }
 
         .logos-galaxy-desktop {
-            position: relative;
-            right: -30px;
-            top: 30px;
-            min-width: 650px;
+            position: absolute;
+            top: 0;
         }
 
         .why .text {
@@ -116,7 +120,106 @@
         }
 
         .go-to-learning {
-            margin-top: 10px;
+            margin-top: 40px;
+        }
+
+        .dst-buttons {
+            display: flex;
+            gap: 16px;
+        }
+
+        .dst-button {
+            border-radius: 63px;
+            height: 40px;
+            padding: 0px 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dst-button.primary {
+            background: #1133CA;
+            color: white;
+        }
+
+        .dst-button.secondary {
+            border: 1px solid;
+            border-color: #1133CA;
+            background: transparent;
+            color: #1133CA;
+        }
+
+        .dst-badges {
+            display: flex;
+            align-items: flex-start;
+            align-content: flex-start;
+            gap: 8px 8px;
+            align-self: stretch;
+            flex-wrap: wrap;
+        }
+
+        .dst-badge {
+            display: flex;
+            padding: 8px 24px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            color: #1133CA;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .dst-badge.primary {
+            background: #D5DEFF;
+            color: #1133CA;
+        }
+
+        .dst-session {
+            display: flex;
+            padding: 32px;
+            flex-direction: column;
+            align-items: flex-start;
+            align-self: stretch;
+            border-radius: 24px;
+            border: 1px solid #E5E5E5;
+            background: #FFF;
+            box-shadow: 0px 0px 0px 1px rgba(20, 20, 20, 0.05), 0px 1px 1px 0px rgba(20, 20, 20, 0.05), 0px 2px 2px -1px rgba(20, 20, 20, 0.05);
+        }
+
+
+        .info {
+            color: rgba(0, 0, 0, 0.80);
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 2px;
+        }
+
+        .dst-session .content {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            letter-spacing: -0.64px;
+            margin-top: 24px;
+        }
+
+        .sessions {
+            background: linear-gradient(180deg, rgba(242, 242, 242, 0.32) 0%, rgba(242, 242, 242, 0.00) 52.5%, rgba(242, 242, 242, 0.32) 100%);
+        }
+
+        .column.sessions {
+            gap: 16px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-container {
+            border-radius: 40px;
+            background: linear-gradient(117deg, rgba(233, 241, 255, 0.40) 19.26%, #FFF 106.18%);
+            min-height: 309px;
         }
     </style>
   </head>
@@ -128,8 +231,8 @@
               </div>
           </div>
       </nav>
-      <section class="learning">
-          <div class="container learning-container is-flex is-align-items-center is-justify-content-center">
+      <section class="section learning">
+          <div class="container dst-dotted-container learning-container primary is-flex is-align-items-center is-justify-content-center">
               <div class="columns">
                   <div class="column has-text-centered">
                       <h1>
@@ -140,16 +243,16 @@
                       <span>Una formación en español para que domines el diseño, distribución y</span>
                       <span>aplicación de la metodología de design tokens</span>
                       </p>
-                      <p class="go-to-learning">
-                        <button class="button is-primary">Ir a la formación --></button>
-                      </p>
+                      <div class="go-to-learning">
+                        <button class="dst-button primary">Ir a la formación --></button>
+                      </div>
                   </div>
               </div>
           </div>
       </section>
 
-      <section class="why">
-        <div class="container">
+      <section class="section why">
+        <div class="container" style="position: relative">
             <div class="columns is-vcentered">
                 <div class="column text is-flex is-half">
                     <h2>Por qué Design Tokens</h2>
@@ -159,17 +262,177 @@
                     <p>
                         Si te interesa optimizar los tiempos de desarrollo, la comunicación entre equipos o los sistemas de diseño en empresas en escala, este curso es para tí.
                     </p>
+                    <div class="dst-buttons">
+                        <button class="dst-button primary">Ir a la formación --></button>
+                        <button class="dst-button secondary">Leer más en substack</button>
+                    </div>
                 </div>
 
-                <div class="column logo is-half is-hidden-mobile">
+                <div class="column is-half is-hidden-mobile">
                     <img class="logos-galaxy-desktop" src="/logos-galaxy.svg"/>
                 </div>
 
-                <div class="column logo is-half is-hidden-desktop">
-                    <img class="logos-galaxy" src="/logos-galaxy.svg"/>
+                <div class="column is-half is-hidden-desktop">
+                    <img class="logos-galaxy-mobile" src="/logos-galaxy.svg"/>
                 </div>
             </div>
         </div>
+      </section>
+
+      <section class="section others-companies">
+          <div class="container other-companies-container layout-bg">
+              <div class="columns is-multiline is-flex is-align-items-center is-justify-content-center">
+                  <div class="column is-full  has-text-centered">
+                      <h2>
+                            <span>Las grandes empresas ya trabajan<span>
+                            <span>con Design Tokens</span>
+                      </h2>
+                  </div>
+                  <div class="column is-full">
+                      <img class="" src="/adobe-logo.svg"/>
+                      <img class="" src="/adobe-logo.svg"/>
+                      <img class="" src="/adobe-logo.svg"/>
+                      <img class="" src="/adobe-logo.svg"/>
+                      <!-- <img class="" src="/adobe-logo.svg"/> -->
+                      <!-- <img class="" src="/adobe-logo.svg"/> -->
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="section sessions">
+          <div class="container sessions-container">
+              <div class="columns">
+                  <div class="column is-two-fifths">
+                      <h2>Sesiones</h2>
+
+                      <div class="dst-badges">
+                          <div class="dst-badge primary">
+                              8 SESIONES EN DIRECTO
+                          </div>
+                          <div class="dst-badge primary">
+                              18 HORAS
+                          </div>
+                          <div class="dst-badge primary">
+                              100% REMOTO
+                          </div>
+                          <div class="dst-badge primary">
+                              FOCO EN LA PRÁCTICA
+                          </div>
+                      </div>
+                  </div>
+                  <div class="column sessions">
+                      <div class="dst-session">
+                          <div class="info">SESIÓN 1</div>
+                          <h3>La fuente de la verdad</h3>
+                          <div class="content">
+                            Hablaremos del problema de comunicación entre los equipos de diseño y desarrollo y cómo los design tokens te ayudarán a mejorar el proceso, siendo la fuente de la verdad. Además de presentarnos y profundizar en lo que veremos durante el curso, mostraremos cómo es un flujo completo desde el diseño a la implementación.
+                          </div>
+                      </div>
+
+                      <div class="dst-session">
+                          <div class="info">SESIÓN 2</div>
+                          <h3>Arquitectura de tokens</h3>
+                          <div class="content">
+                            Profundizarás en la teoría y buenas prácticas detrás de la implementación de design tokens. El objetivo será tener claros los principios y entender la toma de decisiones de su creación.
+                          </div>
+                      </div>
+
+                      <div class="dst-session">
+                          <div class="info">SESIÓN 3</div>
+                          <h3>Definición de estilos</h3>
+                          <div class="content">
+                            Entraremos a la práctica de tokenizar nuestra interfaz, con herramientas como Figma y Token Studio.
+                          </div>
+                      </div>
+
+                      <div class="dst-session">
+                          <div class="info">SESIÓN 4</div>
+                          <h3>Sincronización con Github</h3>
+                          <div class="content">
+                            Aprenderás a sincronizar tus design tokens entre Figma y GitHub, asegurando que los estilos y componentes de tu aplicación estén siempre actualizados y alineados.
+                          </div>
+                      </div>
+
+                      <div class="dst-session">
+                          <div class="info">SESIÓN 5</div>
+                          <h3>Alimentando Style Dictionary</h3>
+                          <div class="content">
+                              Descubrirás cómo utilizar Style Dictionary para gestionar tus Design Tokens a partir de una única fuente de la verdad. Veremos cómo configurarlo y alimentarlo desde los Tokens de Figma almacenados en Github.
+                          </div>
+                      </div>
+
+                      <div class="dst-session">
+                          <div class="info">SESIÓN 6</div>
+                          <h3>Transformadores</h3>
+                          <div class="content">
+                               En esta sesión, aprenderás a usar transformadores en Style Dictionary para convertir y adaptar los Design Tokens a las diferentes necesidades de la plataforma.
+                          </div>
+                      </div>
+
+                      <div class="dst-session">
+                          <div class="info">SESIÓN 7</div>
+                          <h3>Formatos</h3>
+                          <div class="content">
+                               Verás cómo usar los formatos en Style Dictionary para definir la salida de los Design Tokens en diferentes lenguajes y plataformas (CSS, JavaScript, Swift, XML, etc.). Aprenderás a crear formatos personalizados que se adapten a las necesidades específicas de tu proyecto, permitiendo un flujo de trabajo más eficiente entre el diseño y el desarrollo.
+                          </div>
+                      </div>
+
+                      <div class="dst-session">
+                          <div class="info">SESIÓN 8</div>
+                          <h3>Dark Mode y proyectos</h3>
+                          <div class="content">
+                               Finalmente, descubrirás el flujo completo para implementar el dark mode en proyectos utilizando Style Dictionary. También será una oportunidad para que los participantes compartan los design tokens que han desarrollado durante el curso, intercambiando ideas y mejoras.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="section meet-the-teachers">
+          <div class="container info-container is-flex is-align-items-center is-justify-content-center">
+              <div class="columns">
+                  <div class="column">
+                      <h2>Conoce a los profesores</h2>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="section pricing-section">
+          <div class="container">
+              <div class="columns">
+                  <div class="column has-text-centered pricing-title">
+                      <h2>Precios</h2>
+                  </div>
+              </div>
+              <div class="columns">
+                  <div class="column">
+                      <div class="dst-dotted-container pricing-container secondary pa-40">
+                          <div class="info">NEWSLETTER</div>
+                          <div class="title"><h3>Design Tokens en español</h3></div>
+                          <div class="price">GRATIS</div>
+                          <div class="description">
+                               Suscríbete a nuestra newsletter para recibir píldoras y novedades sobre design tokens
+                          </div>
+                          <div class="button">
+                              <button class="dst-button secondary">Suscribirme</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="column">
+                      <div class="dst-dotted-container pricing-container-salient secondary pa-40">
+                          <div class="info">CURSO EN DIRECTO</div>
+                      </div>
+                  </div>
+                  <div class="column">
+                      <div class="dst-dotted-container secondary pricing-container pa-40">
+                          <div class="info">ASESORÍA PRIVADA</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </section>
   </body>
 </html>
