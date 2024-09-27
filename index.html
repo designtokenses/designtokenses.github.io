@@ -20,9 +20,14 @@
             font-weight: 500;
         }
 
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 40px;
+            }
+        }
+
         p {
-            font-size: 22px;
-            font-weight: 300;
         }
 
         h2 {
@@ -46,7 +51,6 @@
 
         p {
             color: #000;
-            /* font-family: Outfit; */
             font-size: 24px;
             font-style: normal;
             font-weight: 300;
@@ -69,15 +73,81 @@
         .dst-dotted-container {
             border: dotted 2px #2D5DEF;
             border-radius: 40px;
+            line-height: normal;
+            font-style: normal;
+        }
+
+        .price {
+            display: flex;
+            align-items: center;
+            gap: 10px;;
+        }
+
+        .dst-dotted-container .price-primary {
+            font-size: 46.049px;
+            font-weight: 700;
+        }
+
+        .symbol {
+            font-size: 28.78px;
+        }
+
+        .price-primary .symbol {
+            font-weight: 700;
+        }
+
+        .dst-dotted-container .price-secondary {
+            font-size: 34.537px;
+            font-weight: 500;
+            text-decoration: line-through;
+        }
+
+        .price-secondary .symbol {
+            font-weight: 500;
         }
 
         .pricing-container {
+            display: grid;
+        }
+
+        .pricing-container .button {
+            align-self: end;
+        }
+
+        .pricing-container .button button {
+            width: 100%;
+        }
+
+        .pricing-dotted-container {
             min-height: 459px;
         }
 
-        .pricing-container-salient {
+        .pricing-dotted-container-salient {
             min-height: 499px;
             margin-top: -39px;
+        }
+
+        @media (max-width: 768px) {
+            .pricing-dotted-container-salient {
+                margin-top: auto;
+            }
+
+            .prices {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .course {
+                order: 1;
+            }
+
+            .newsletter {
+                order: 2;
+            }
+
+            .consultory {
+                order: 3;
+            }
         }
 
         .pricing-title {
@@ -103,6 +173,12 @@
             min-height: 547px;
         }
 
+        .learning-container p {
+            margin-top: 24px;
+            font-size: 22px;
+            font-weight: 300;
+        }
+
         .other-companies-container {
             min-height: 484px;
         }
@@ -120,7 +196,7 @@
         }
 
         .go-to-learning {
-            margin-top: 40px;
+            margin-top: 42px;
         }
 
         .dst-navbar {
@@ -191,6 +267,13 @@
             box-shadow: 0px 0px 0px 1px rgba(20, 20, 20, 0.05), 0px 1px 1px 0px rgba(20, 20, 20, 0.05), 0px 2px 2px -1px rgba(20, 20, 20, 0.05);
         }
 
+        .dst-session .title {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
 
         .info {
             color: rgba(0, 0, 0, 0.80);
@@ -225,6 +308,62 @@
             background: linear-gradient(117deg, rgba(233, 241, 255, 0.40) 19.26%, #FFF 106.18%);
             min-height: 309px;
         }
+
+        .teacher-box {
+            display: grid;
+            grid-template-columns: 50px auto 50px;
+            padding: 16px;
+            gap: 8px;
+            align-items: center;
+            border-radius: 59px;
+            border: 1px dashed #1133CA;
+            background: #FFF;
+        }
+
+        .teachers {
+            margin-top: 20px;
+        }
+
+        .teacher-box .avatar {
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
+            border-radius: 120px;
+        }
+
+        .teacher-box .name {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .teacher-box .job-title {
+            font-size: 14px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.60);
+        }
+
+        .teacher-box .cta {
+            justify-self: flex-end;
+        }
+
+        .cta {
+            cursor: pointer;
+            border-radius: 63px;
+            width: 40px;
+            display: flex;
+            height: 40px;
+            padding: 0px 20px;
+            background: url("/arrow.svg") #1133CA center / cover no-repeat;
+            background-size: 20px;
+        }
+
+        .pfer {
+            background: url("/pfer.png") lightgray 50% / cover no-repeat;
+        }
+
+        .pperi {
+            background: url("/pperi.png") lightgray 50% / cover no-repeat;
+        }
     </style>
   </head>
   <body>
@@ -248,7 +387,7 @@
                       <span>aplicación de la metodología de design tokens</span>
                       </p>
                       <div class="go-to-learning">
-                        <button class="dst-button primary">Ir a la formación --></button>
+                        <button class="dst-button primary">Ir a la formación →</button>
                       </div>
                   </div>
               </div>
@@ -267,7 +406,7 @@
                         Si te interesa optimizar los tiempos de desarrollo, la comunicación entre equipos o los sistemas de diseño en empresas en escala, este curso es para tí.
                     </p>
                     <div class="dst-buttons">
-                        <button class="dst-button primary">Ir a la formación --></button>
+                        <button class="dst-button primary">Ir a la formación →</button>
                         <button class="dst-button secondary">Leer más en substack</button>
                     </div>
                 </div>
@@ -395,10 +534,49 @@
       </section>
 
       <section class="section meet-the-teachers">
-          <div class="container info-container is-flex is-align-items-center is-justify-content-center">
+          <div class="container info-container is-align-items-center is-justify-content-center pa-40">
               <div class="columns">
-                  <div class="column">
+                  <div class="column has-text-centered">
                       <h2>Conoce a los profesores</h2>
+                  </div>
+              </div>
+              <div class="columns teachers is-justify-content-center">
+                  <div class="column is-two-fifths">
+                      <div class="teacher-box is-hidden-mobile">
+                          <div class="avatar pfer"></div>
+                          <div>
+                              <div class="name">Pablo Fernández Franco</div>
+                              <div class="job-title">Software Platform Engineer</div>
+                          </div>
+                          <div class="cta"></div>
+                      </div>
+                      <div class="teacher-box is-hidden-desktop">
+                          <div class="avatar pfer"></div>
+                          <div>
+                              <div class="name">Pablo F.</div>
+                              <div class="job-title">SP Engineer</div>
+                          </div>
+                          <div class="cta"></div>
+                      </div>
+                  </div>
+                  <div class="column is-two-fifths">
+                      <div class="teacher-box is-hidden-mobile">
+                          <div class="avatar pperi"></div>
+                          <div>
+                              <div class="name">Pablo Peribáñez Tafalla</div>
+                              <div class="job-title">Design Systems</div>
+                          </div>
+                          <div class="cta"></div>
+                      </div>
+
+                      <div class="teacher-box is-hidden-desktop">
+                          <div class="avatar pperi"></div>
+                          <div>
+                              <div class="name">Pablo P.</div>
+                              <div class="job-title">Design Systems</div>
+                          </div>
+                          <div class="cta"></div>
+                      </div>
                   </div>
               </div>
           </div>
@@ -411,28 +589,84 @@
                       <h2>Precios</h2>
                   </div>
               </div>
-              <div class="columns">
-                  <div class="column">
-                      <div class="dst-dotted-container pricing-container secondary pa-40">
+              <div class="columns prices">
+                  <div class="column newsletter">
+                      <div class="dst-dotted-container pricing-container pricing-dotted-container secondary pa-40">
                           <div class="info">NEWSLETTER</div>
                           <div class="title"><h3>Design Tokens en español</h3></div>
-                          <div class="price">GRATIS</div>
+                          <div class="price-primary">GRATIS</div>
                           <div class="description">
-                               Suscríbete a nuestra newsletter para recibir píldoras y novedades sobre design tokens
+                               Suscríbete a nuestra newsletter para recibir píldoras y novedades sobre design tokens.
                           </div>
                           <div class="button">
                               <button class="dst-button secondary">Suscribirme</button>
                           </div>
                       </div>
                   </div>
-                  <div class="column">
-                      <div class="dst-dotted-container pricing-container-salient secondary pa-40">
+                  <div class="column course">
+                      <div class="dst-dotted-container pricing-container pricing-dotted-container-salient secondary pa-40">
                           <div class="info">CURSO EN DIRECTO</div>
+                          <div class="title"><h3>Escalando productos con Design Tokens</h3></div>
+                          <div class="price">
+                              <div class="price-primary">480€</div>
+                              <div class="price-secondary">950€</div>
+                          </div>
+                          <div class="reasons">
+                            Aprende el proceso de creación de design tokens desde la definición hasta la implementación en desarrollo. 
+                          </div>
+                          <div class="button">
+                              <button class="dst-button primary">Solicitar información</button>
+                          </div>
                       </div>
                   </div>
-                  <div class="column">
-                      <div class="dst-dotted-container secondary pricing-container pa-40">
+                  <div class="column consultory">
+                      <div class="dst-dotted-container secondary pricing-container pricing-dotted-container pa-40">
                           <div class="info">ASESORÍA PRIVADA</div>
+                          <div class="title"><h3>¿Quieres que te ayudemos en tu proyecto?</h3></div>
+                          <div class="reasons">
+                            Contáctanos para ayudarte de forma más personalizada
+                          </div>
+                          <div class="button">
+                              <button class="dst-button secondary">Contáctanos</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="section sessions">
+          <div class="container sessions-container">
+              <div class="columns">
+                  <div class="column is-two-fifths">
+                      <h2>Preguntas frecuentes</h2>
+                  </div>
+                  <div class="column sessions">
+                      <div class="dst-session">
+                          <div class="title">¿Cuándo serán las clases?</div>
+                          <div class="content">
+                            La primera edición empezará el lunes 4 de Noviembre.
+                            Las clases serán los martes y jueves, más una sesión de introducción el lunes 4 y una final el viernes 22 de Noviembre. Serán online en directo, empezando a las 18:30 UTC+1 (horario Madrid)
+                          </div>
+                      </div>
+
+                      <div class="dst-session">
+                          <div class="title">¿Qué nivel de conocimientos necesito para el curso?</div>
+                          <div class="content">
+                            El curso va dirigido a cualquier perfil involucrado en el desarrollo de productos digitales, desde diseñadores a desarrolladores y product managers que quieran conocer la metodología para mejorar la escalabilidad y comunicación entre equipos a través de los Design Tokens. Daremos por sentada mucha información básica, por lo que si tienes dudas tanto sobre si este curso es para tí, como si va a cubrir tus expectativas, por favor contáctanos por correo y te daremos más info.
+                          </div>
+                      </div>
+                      <div class="dst-session">
+                          <div class="title">¿Necesito saber programar para el curso?</div>
+                          <div class="content">
+                            No es necesario. Partiremos desde cero a la hora de enseñar cómo transformar y llevar a producción nuestros Design Tokens, por lo que no tendrás problemas de seguir las clases aunque nunca hayas programado.
+                          </div>
+                      </div>
+                      <div class="dst-session">
+                          <div class="title">¿Habrá más ediciones?</div>
+                          <div class="content">
+                            Sí. Próximamente anunciaremos las fechas de las siguientes ediciones. Puedes mantenerte al tanto siguiendo nuestra página de Linkedin.
+                          </div>
                       </div>
                   </div>
               </div>
