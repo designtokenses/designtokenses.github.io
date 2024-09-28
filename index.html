@@ -25,14 +25,14 @@
             h1 {
                 font-size: 40px;
             }
-        }
 
-        p {
+            .logo {
+                padding-left: 20px;
+            }
         }
 
         h2 {
             color: #000;
-            font-family: "Space Grotesk";
             font-size: 48px;
             font-style: normal;
             font-weight: 500;
@@ -57,6 +57,7 @@
             line-height: normal;
             letter-spacing: -0.96px;
         }
+
 
         .pa-40 {
             padding: 40px;
@@ -221,11 +222,27 @@
             color: white;
         }
 
+        .dst-button.primary:hover {
+            background: #0F2896;
+        }
+
+        .dst-button.primary:active {
+            background: #081343;
+        }
+
         .dst-button.secondary {
             border: 1px solid;
             border-color: #1133CA;
             background: transparent;
             color: #1133CA;
+        }
+
+        .dst-button.secondary:hover {
+            background: #F6F9FE;
+        }
+
+        .dst-button.secondary:active {
+            background: #D5DEFF;
         }
 
         .dst-badges {
@@ -355,6 +372,14 @@
             padding: 0px 20px;
             background: url("/arrow.svg") #1133CA center / cover no-repeat;
             background-size: 20px;
+        }
+
+        .cta:hover {
+            background-color: #0F2896;
+        }
+
+        .cta:active {
+            background-color: #081343;
         }
 
         .pfer {
