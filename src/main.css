@@ -1,0 +1,376 @@
+body {
+    font-family: "Space Grotesk", sans-serif;
+    background: #FCFDFF;
+}
+
+h1 {
+    font-size: 3.5rem; /* 56px */
+    font-weight: 500;
+}
+
+@media (max-width: 48rem) { /* 768px */
+    h1 {
+        font-size: 2.5rem; /* 40px */
+    }
+
+    .navbar__logo {
+        padding-left: 1.25rem; /* 20px */
+    }
+}
+
+h2 {
+    color: #000;
+    font-size: 3rem; /* 48px */
+    font-style: normal;
+    font-weight: 500;
+    line-height: 4rem; /* 64px */
+    letter-spacing: -0.125rem; /* -2px */
+}
+
+h3 {
+    color: #000;
+    font-size: 2rem; /* 32px */
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.125rem; /* -2px */
+}
+
+p {
+    color: #000;
+    font-size: 1.5rem; /* 24px */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.06rem; /* -0.96px */
+}
+
+.pa-40 {
+    padding: 2.5rem; /* 40px */
+}
+
+.why .container .columns {
+    min-height: 46.625rem; /* 746px */
+}
+
+.column span {
+    display: block;
+}
+
+.dst-dotted-container {
+    border: dotted 0.125rem #2D5DEF; /* 2px */
+    border-radius: 2.5rem; /* 40px */
+    line-height: normal;
+    font-style: normal;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem; /* 10px */
+}
+
+.dst-dotted-container .price-primary {
+    font-size: 2.88rem; /* 46.049px */
+    font-weight: 700;
+}
+
+.symbol {
+    font-size: 1.8rem; /* 28.78px */
+}
+
+.price-primary .symbol {
+    font-weight: 700;
+}
+
+.dst-dotted-container .price-secondary {
+    font-size: 2.16rem; /* 34.537px */
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.price-secondary .symbol {
+    font-weight: 500;
+}
+
+.pricing-container {
+    display: grid;
+}
+
+.pricing-container .button {
+    align-self: end;
+}
+
+.pricing-container .button button {
+    width: 100%;
+}
+
+.pricing-dotted-container {
+    min-height: 28.69rem; /* 459px */
+}
+
+.pricing-dotted-container-salient {
+    min-height: 31.19rem; /* 499px */
+    margin-top: -2.44rem; /* -39px */
+}
+
+@media (max-width: 48rem) { /* 768px */
+    .pricing-dotted-container-salient {
+        margin-top: auto;
+    }
+
+    .prices {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .course {
+        order: 1;
+    }
+
+    .newsletter {
+        order: 2;
+    }
+
+    .consultory {
+        order: 3;
+    }
+}
+
+.pricing-title {
+    margin-bottom: 5rem; /* 80px */
+}
+
+.pricing-section {
+    margin-top: 2.5rem; /* 40px */
+}
+
+.dst-dotted-container.primary {
+    background: url('/layout-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.dst-dotted-container.secondary {
+    background: linear-gradient(117deg, rgba(233, 241, 255, 0.40) 19.26%, #FFF 106.18%);
+}
+
+.learning-container {
+    min-height: 34.19rem; /* 547px */
+}
+
+.learning-container p {
+    margin-top: 1.5rem; /* 24px */
+    font-size: 1.375rem; /* 22px */
+    font-weight: 300;
+}
+
+.other-companies-container {
+    min-height: 30.25rem; /* 484px */
+}
+
+.logos-galaxy-desktop {
+    position: absolute;
+    top: 0;
+}
+
+.why .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.375rem; /* 54px */
+}
+
+.go-to-learning {
+    margin-top: 2.625rem; /* 42px */
+}
+
+.dst-navbar {
+    padding-top: 2.125rem; /* 34px */
+}
+
+.dst-buttons {
+    display: flex;
+    gap: 1rem; /* 16px */
+}
+
+.dst-button {
+    border-radius: 3.938rem; /* 63px */
+    height: 2.5rem; /* 40px */
+    padding: 0px 1.25rem; /* 0px 20px */
+    justify-content: center;
+    align-items: center;
+}
+
+.dst-button.primary {
+    background: #1133CA;
+    color: white;
+}
+
+.dst-button.primary:hover {
+    background: #0F2896;
+}
+
+.dst-button.primary:active {
+    background: #081343;
+}
+
+.dst-button.secondary {
+    border: 1px solid;
+    border-color: #1133CA;
+    background: transparent;
+    color: #1133CA;
+}
+
+.dst-button.secondary:hover {
+    background: #F6F9FE;
+}
+
+.dst-button.secondary:active {
+    background: #D5DEFF;
+}
+
+.dst-badges {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 0.5rem 0.5rem; /* 8px 8px */
+    align-self: stretch;
+    flex-wrap: wrap;
+}
+
+.dst-badge {
+    display: flex;
+    padding: 0.5rem 1.5rem; /* 8px 24px */
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem; /* 8px */
+    color: #1133CA;
+    font-size: 1rem; /* 16px */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.dst-badge.primary {
+    background: #D5DEFF;
+    color: #1133CA;
+}
+
+.dst-session {
+    display: flex;
+    padding: 2rem; /* 32px */
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 1.5rem; /* 24px */
+    border: 1px solid #E5E5E5;
+    background: #FFF;
+    box-shadow: 0px 0px 0px 1px rgba(20, 20, 20, 0.05), 0px 1px 1px 0px rgba(20, 20, 20, 0.05), 0px 2px 2px -1px rgba(20, 20, 20, 0.05);
+}
+
+.dst-session .title {
+    font-size: 1.25rem; /* 20px */
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.info {
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 0.875rem; /* 14px */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.125rem; /* 2px */
+}
+
+.dst-session .content {
+    font-size: 1rem; /* 16px */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.04rem; /* -0.64px */
+    margin-top: 1.5rem; /* 24px */
+}
+
+.sessions {
+    background: linear-gradient(180deg, rgba(242, 242, 242, 0.32) 0%, rgba(242, 242, 242, 0.00) 52.5%, rgba(242, 242, 242, 0.32) 100%);
+}
+
+.column.sessions {
+    gap: 1rem; /* 16px */
+    display: flex;
+    flex-direction: column;
+}
+
+.info-container {
+    border-radius: 2.5rem; /* 40px */
+    background: linear-gradient(117deg, rgba(233, 241, 255, 0.40) 19.26%, #FFF 106.18%);
+    min-height: 19.31rem; /* 309px */
+}
+
+.teacher-box {
+    display: grid;
+    grid-template-columns: 3.125rem auto 3.125rem; /* 50px */
+    padding: 1rem; /* 16px */
+    gap: 0.5rem; /* 8px */
+    align-items: center;
+    border-radius: 3.688rem; /* 59px */
+    border: 1px dashed #1133CA;
+    background: #FFF;
+}
+
+.teachers {
+    margin-top: 1.25rem; /* 20px */
+}
+
+.teacher-box .avatar {
+    width: 3rem; /* 48px */
+    height: 3rem; /* 48px */
+    flex-shrink: 0;
+    border-radius: 7.5rem; /* 120px */
+}
+
+.teacher-box .name {
+    font-size: 1.25rem; /* 20px */
+    font-weight: 500;
+}
+
+.teacher-box .job-title {
+    font-size: 0.875rem; /* 14px */
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.60);
+}
+
+.teacher-box .cta {
+    justify-self: flex-end;
+}
+
+.cta {
+    cursor: pointer;
+    border-radius: 3.938rem; /* 63px */
+    width: 2.5rem; /* 40px */
+    display: flex;
+    height: 2.5rem; /* 40px */
+    padding: 0px 1.25rem; /* 0px 20px */
+    background: url("/arrow.svg") #1133CA center / cover no-repeat;
+    background-size: 1.25rem; /* 20px */
+}
+
+.cta:hover {
+    background-color: #0F2896;
+}
+
+.cta:active {
+    background-color: #081343;
+}
+
+.pfer {
+    background: url("/pfer.png") lightgray 50% / cover no-repeat;
+}
+
+.pperi {
+    background: url("/pperi.png") lightgray 50% / cover no-repeat;
+}
