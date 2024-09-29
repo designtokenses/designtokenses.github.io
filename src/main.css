@@ -53,7 +53,7 @@ p {
     min-height: 46.625rem; /* 746px */
 }
 
-.column span {
+.section span {
     display: block;
 }
 
@@ -158,6 +158,7 @@ p {
 
 .learning-container {
     min-height: 34.19rem; /* 547px */
+    padding-top: 100px;
 }
 
 .learning-container p {
@@ -168,6 +169,11 @@ p {
 
 .other-companies-container {
     min-height: 30.25rem; /* 484px */
+    background: linear-gradient(116.75deg, rgba(233, 241, 255, 0.4) 19.26%, #FFFFFF 106.18%);
+}
+
+.other-companies-container .h2 {
+    margin-top: 80px;
 }
 
 .logos-galaxy-desktop {
@@ -195,12 +201,21 @@ p {
     gap: 1rem; /* 16px */
 }
 
+@media (max-width: 48rem) { /* 768px */
+    .dst-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
 .dst-button {
+    display: flex;
     border-radius: 3.938rem; /* 63px */
     height: 2.5rem; /* 40px */
     padding: 0px 1.25rem; /* 0px 20px */
     justify-content: center;
     align-items: center;
+    padding: 10px 20px;
 }
 
 .dst-button.primary {
@@ -295,10 +310,6 @@ p {
     margin-top: 1.5rem; /* 24px */
 }
 
-.sessions {
-    background: linear-gradient(180deg, rgba(242, 242, 242, 0.32) 0%, rgba(242, 242, 242, 0.00) 52.5%, rgba(242, 242, 242, 0.32) 100%);
-}
-
 .column.sessions {
     gap: 1rem; /* 16px */
     display: flex;
@@ -373,4 +384,32 @@ p {
 
 .pperi {
     background: url("/pperi.png") lightgray 50% / cover no-repeat;
+}
+
+.company-logos {
+  margin-top: 72px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.company-logos::-webkit-scrollbar {
+  display: none; 
+}
+
+.logo {
+  flex: 0 0 auto;
+  margin: 0 1rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.logo img {
+  max-height: 140px;
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
+
+.logo img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
 }
