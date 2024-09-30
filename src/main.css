@@ -8,15 +8,6 @@ h1 {
     font-weight: 500;
 }
 
-@media (max-width: 48rem) { /* 768px */
-    h1 {
-        font-size: 2.5rem; /* 40px */
-    }
-
-    .navbar__logo {
-        padding-left: 1.25rem; /* 20px */
-    }
-}
 
 h2 {
     color: #000;
@@ -25,6 +16,20 @@ h2 {
     font-weight: 500;
     line-height: 4rem; /* 64px */
     letter-spacing: -0.125rem; /* -2px */
+}
+
+@media (max-width: 48rem) { /* 768px */
+    h1 {
+        font-size: 2.5rem; /* 40px */
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .navbar__logo {
+        padding-left: 1.25rem; /* 20px */
+    }
 }
 
 h3 {
@@ -47,6 +52,10 @@ p {
 
 .pa-40 {
     padding: 2.5rem; /* 40px */
+}
+
+.pa-24 {
+    padding: 1.5rem; /* 40px */
 }
 
 .why .container .columns {
@@ -95,6 +104,7 @@ p {
 
 .pricing-container {
     display: grid;
+    padding: 2.5rem;
 }
 
 .pricing-container .button {
@@ -115,6 +125,10 @@ p {
 }
 
 @media (max-width: 48rem) { /* 768px */
+    .pricing-container {
+        padding: 2.5rem 1.5rem;
+    }
+
     .pricing-dotted-container-salient {
         margin-top: auto;
     }
@@ -285,6 +299,12 @@ p {
     box-shadow: 0px 0px 0px 1px rgba(20, 20, 20, 0.05), 0px 1px 1px 0px rgba(20, 20, 20, 0.05), 0px 2px 2px -1px rgba(20, 20, 20, 0.05);
 }
 
+@media (max-width: 48rem) { /* 768px */
+    .dst-session {
+        padding: 1.5rem; /* 32px */
+    }
+}
+
 .dst-session .title {
     font-size: 1.25rem; /* 20px */
     font-style: normal;
@@ -333,6 +353,11 @@ p {
     background: #FFF;
 }
 
+@media (max-width: 48rem) { 
+    .teacher-box {
+        padding: 0.5rem;
+    }
+}
 .teachers {
     margin-top: 1.25rem; /* 20px */
 }
