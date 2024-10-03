@@ -1,0 +1,72 @@
+{
+  "core": {
+    "content": {
+      "primary": {
+        "$type": "color",
+        "$value": "{colors.black}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{colors.gray.700}"
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{colors.white}"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "{colors.blue.600}"
+      }
+    },
+    "background": {
+      "surface": {
+        "$type": "color",
+        "$value": "{colors.white}"
+      },
+      "primary": {
+        "$type": "color",
+        "$value": "{colors.gray.100}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{colors.blue.100}"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "{colors.blue.600}"
+      },
+      "accent-light": {
+        "$type": "color",
+        "$value": "{colors.blue.200}"
+      }
+    },
+    "border": {
+      "primary": {
+        "$type": "color",
+        "$value": "{colors.gray.400}"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "{colors.blue.400}"
+      }
+    }
+  },
+  "states": {
+    "background": {
+      "accent-hover": {
+        "$type": "color",
+        "$value": "{colors.blue.700}"
+      },
+      "accent-active": {
+        "$type": "color",
+        "$value": "{colors.blue.800}"
+      }
+    },
+    "content": {
+      "disabled": {
+        "$type": "color",
+        "$value": "{colors.gray.600}"
+      }
+    }
+  }
+}
