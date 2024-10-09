@@ -7,13 +7,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" crossorigin href="/assets/index-CidNv291.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-Cy8m6OLM.css">
   </head>
-  <body>
+  <body class="light">
       <nav class="navbar dst-navbar">
           <div class="container">
               <div class="navbar__logo">
-                  <img src="/logo.svg" />
+                  <!-- <img id="logo" src="/logo.svg" /> -->
               </div>
           </div>
       </nav>
@@ -52,11 +52,13 @@
                 </div>
 
                 <div class="column is-half is-hidden-mobile">
-                    <img class="logos-galaxy-desktop" src="/logos-galaxy.svg"/>
+                    <div class="logos-galaxy desktop"></div>
+                    <!-- <img class="logos-galaxy-desktop" src="/logos-galaxy.svg"/> -->
                 </div>
 
                 <div class="column is-half is-hidden-desktop">
-                    <img class="logos-galaxy-mobile" src="/logos-galaxy.svg"/>
+                    <div class="logos-galaxy"></div>
+                    <!-- <img class="logos-galaxy-mobile" src="/logos-galaxy.svg"/> -->
                 </div>
             </div>
         </div>
@@ -267,7 +269,7 @@
                             Aprende el proceso de creación de design tokens desde la definición hasta la implementación en desarrollo. 
                           </div>
                           <div class="button">
-                              <a href="#" class="dst-button primary">AGOTADO</a>
+                              <a href="https://forms.gle/1NJ9GmwpN45Uz1EdA" class="dst-button primary" target="_blank">ÚLTIMAS PLAZAS</a>
                           </div>
                       </div>
                   </div>
@@ -295,7 +297,7 @@
                   </div>
                   <div class="column sessions">
                       <div class="dst-session">
-                          <div class="title">¿Cuándo serán las clases?</div>
+                          <div class="title"><h3>¿Cuándo serán las clases?</h3></div>
                           <div class="content">
                             La primera edición empezará el lunes 4 de Noviembre.
                             Las clases serán los martes y jueves, más una sesión de introducción el lunes 4 y una final el viernes 22 de Noviembre. Serán online en directo, empezando a las 18:30 UTC+1 (horario Madrid)
@@ -303,19 +305,19 @@
                       </div>
 
                       <div class="dst-session">
-                          <div class="title">¿Qué nivel de conocimientos necesito para el curso?</div>
+                          <div class="title"><h3>¿Qué nivel de conocimientos necesito para el curso?</h3></div>
                           <div class="content">
                             El curso va dirigido a cualquier perfil involucrado en el desarrollo de productos digitales, desde diseñadores a desarrolladores y product managers que quieran conocer la metodología para mejorar la escalabilidad y comunicación entre equipos a través de los Design Tokens. Daremos por sentada mucha información básica, por lo que si tienes dudas tanto sobre si este curso es para tí, como si va a cubrir tus expectativas, por favor contáctanos por correo y te daremos más info.
                           </div>
                       </div>
                       <div class="dst-session">
-                          <div class="title">¿Necesito saber programar para el curso?</div>
+                          <div class="title"><h3>¿Necesito saber programar para el curso?</h3></div>
                           <div class="content">
                             No es necesario. Partiremos desde cero a la hora de enseñar cómo transformar y llevar a producción nuestros Design Tokens, por lo que no tendrás problemas de seguir las clases aunque nunca hayas programado.
                           </div>
                       </div>
                       <div class="dst-session">
-                          <div class="title">¿Habrá más ediciones?</div>
+                          <div class="title"><h3>¿Habrá más ediciones?</h3></div>
                           <div class="content">
                             Sí. Próximamente anunciaremos las fechas de las siguientes ediciones. Puedes mantenerte al tanto siguiendo nuestra página de Linkedin.
                           </div>
@@ -345,5 +347,55 @@
               </div>
           </div>
       </footer>
+
+      <script>
+          const img = document.querySelector('.navbar__logo');
+          const body = document.querySelector('body');
+
+          img.addEventListener('click', () => {
+              if (body.classList.contains('light')) {
+                  body.classList.remove('light');
+                  body.classList.add('dark');
+              } else {
+                  body.classList.remove('dark');
+                  body.classList.add('light');
+              }
+          });
+
+          document.addEventListener('dragover', (ev) => {
+              ev.preventDefault();
+          });
+
+          document.addEventListener('drop', (ev) => {
+              ev.preventDefault();
+              if (event.dataTransfer.files.length > 0) {
+                  const file = event.dataTransfer.files[0];
+                  if (file.type === 'application/zip' || file.name.endsWith('.zip')) {
+                      uploadZip(file);
+                  }
+              }
+          });
+
+          function uploadZip (zip) {
+            const formData = new FormData();
+
+            formData.append('zipFile', zip);
+
+            // Hacemos la petición POST al servidor con el archivo
+            fetch('http://localhost:3000/upload', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text()) // Convertimos la respuesta a texto
+            .then(result => {
+                setTimeout(function () {
+                    window.location.reload();
+                }, 3000);
+            })
+            .catch(error => {
+                console.error('Error al subir el archivo:', error);
+            });
+          }
+      </script>
   </body>
 </html>
