@@ -1,5 +1,5 @@
 body {
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--font-family-primary), var(--font-family-secondary);
     background: var(--core-background-surface);
     width: 100%;
     overflow-x: hidden;
@@ -478,6 +478,12 @@ section.sessions {
     background: var(--core-background-accent);
     color: var(--core-content-inverse);
     position: relative;
+}
+
+.footer .logo {
+    width: 159px;
+    height: 32px;
+    background: var(--assets-footer-logo) no-repeat;
 }
 
 .footer .links {
