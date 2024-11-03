@@ -12,7 +12,7 @@
     "vars": "node build.js"
   },
   "dependencies": {
-    "@tokens-studio/sd-transforms": "^1.2.5",
+    "@tokens-studio/sd-transforms": "^1.2.6",
     "adm-zip": "^0.5.16",
     "bulma": "^1.0.2",
     "express": "^4.21.0",
