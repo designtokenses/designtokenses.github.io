@@ -1,0 +1,123 @@
+{
+  "color": {
+    "button": {
+      "background": {
+        "primary": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.core.background.accent}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{states.background.accent-hover}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{states.background.accent-active}"
+          }
+        },
+        "secondary": {
+          "hover": {
+            "$type": "color",
+            "$value": "{states.background.accent-light-hover}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{states.background.accent-light-active}"
+          }
+        }
+      },
+      "content": {
+        "primary": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.core.content.inverse}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{color.core.content.inverse}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{color.core.content.inverse}"
+          }
+        },
+        "secondary": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.core.content.accent}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{color.core.content.accent}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{color.core.content.accent}"
+          }
+        }
+      },
+      "border": {
+        "primary": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.core.background.accent}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{color.button.background.primary.hover}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{states.background.accent-active}"
+          }
+        },
+        "secondary": {
+          "default": {
+            "$type": "color",
+            "$value": "{color.core.border.accent}"
+          },
+          "hover": {
+            "$type": "color",
+            "$value": "{color.core.border.accent}"
+          },
+          "active": {
+            "$type": "color",
+            "$value": "{color.core.border.accent}"
+          }
+        }
+      }
+    }
+  },
+  "font": {
+    "button": {
+      "default": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{fontFamily.primary}",
+          "fontWeight": "{fontWeight.medium}",
+          "fontSize": "{fontSize.100}",
+          "lineHeight": "{lineHeight.small}"
+        }
+      }
+    }
+  },
+  "sizing": {
+    "button": {
+      "height": {
+        "default": {
+          "$type": "sizing",
+          "$value": "{dimension.x1000}"
+        }
+      }
+    }
+  },
+  "borderRadius": {
+    "button": {
+      "default": {
+        "$type": "borderRadius",
+        "$value": "{borderRadius.large}"
+      }
+    }
+  }
+}

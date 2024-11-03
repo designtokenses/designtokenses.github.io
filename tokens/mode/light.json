@@ -1,0 +1,170 @@
+{
+  "color": {
+    "core": {
+      "content": {
+        "primary": {
+          "$type": "color",
+          "$value": "{color.palette.black}"
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": "{color.palette.mono.700}"
+        },
+        "inverse": {
+          "$type": "color",
+          "$value": "{color.palette.white}"
+        },
+        "accent": {
+          "$type": "color",
+          "$value": "{color.palette.accent.700}"
+        }
+      },
+      "background": {
+        "surface": {
+          "$type": "color",
+          "$value": "{color.palette.white}"
+        },
+        "primary": {
+          "$type": "color",
+          "$value": "{color.palette.mono.50}"
+        },
+        "secondary": {
+          "$type": "color",
+          "$value": "{color.palette.accent.50}"
+        },
+        "accent": {
+          "$type": "color",
+          "$value": "{color.palette.accent.700}"
+        },
+        "accent-light": {
+          "$type": "color",
+          "$value": "{color.palette.accent.100}"
+        }
+      },
+      "border": {
+        "primary": {
+          "$type": "color",
+          "$value": "{color.palette.mono.400}"
+        },
+        "accent": {
+          "$type": "color",
+          "$value": "{color.palette.accent.400}"
+        }
+      }
+    }
+  },
+  "states": {
+    "background": {
+      "accent-hover": {
+        "$type": "color",
+        "$value": "{color.palette.accent.800}"
+      },
+      "accent-light-hover": {
+        "$type": "color",
+        "$value": "{color.palette.accent.200}"
+      },
+      "accent-active": {
+        "$type": "color",
+        "$value": "{color.palette.accent.900}"
+      },
+      "accent-light-active": {
+        "$type": "color",
+        "$value": "{color.palette.accent.300}"
+      }
+    }
+  },
+  "assets": {
+    "hero": {
+      "bg": {
+        "$type": "asset",
+        "$value": "layout-bg-light.svg"
+      }
+    },
+    "intro": {
+      "right": {
+        "$type": "asset",
+        "$value": "galaxy-light.svg"
+      }
+    },
+    "header": {
+      "logo": {
+        "$type": "asset",
+        "$value": "logo-designtokens-es-light.svg"
+      }
+    },
+    "button": {
+      "link": {
+        "$type": "asset",
+        "$value": "arrow-link-light.svg"
+      }
+    },
+    "footer": {
+      "logo": {
+        "$type": "asset",
+        "$value": "logo-designtokens-es-white.svg"
+      }
+    },
+    "logos": {
+      "1": {
+        "$type": "asset",
+        "$value": "Atlassian-logo-light.svg"
+      },
+      "2": {
+        "$type": "asset",
+        "$value": "google-logo-light.svg"
+      },
+      "3": {
+        "$type": "asset",
+        "$value": "zendesk-logo-light.svg"
+      },
+      "4": {
+        "$type": "asset",
+        "$value": "adobe-logo-light.svg"
+      },
+      "5": {
+        "$type": "asset",
+        "$value": "salesforce-logo-light.svg"
+      },
+      "6": {
+        "$type": "asset",
+        "$value": "uber-logo-light.svg"
+      },
+      "placeholder": {
+        "1": {
+          "$type": "asset",
+          "$value": "Atlassian-logo-placeholder-light.svg"
+        },
+        "2": {
+          "$type": "asset",
+          "$value": "google-logo-placeholder-light.svg"
+        },
+        "3": {
+          "$type": "asset",
+          "$value": "zendesk-logo-placeholder-light.svg"
+        },
+        "4": {
+          "$type": "asset",
+          "$value": "adobe-logo-placeholder-light.svg"
+        },
+        "5": {
+          "$type": "asset",
+          "$value": "salesforce-logo-placeholder-light.svg"
+        },
+        "6": {
+          "$type": "asset",
+          "$value": "uber-logo-placeholder-light.svg"
+        }
+      }
+    },
+    "avatar": {
+      "1": {
+        "$type": "asset",
+        "$value": "pablo-fernandez.png"
+      },
+      "2": {
+        "$type": "asset",
+        "$value": "pablo-peribanez.png"
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "font": {
+    "headline": {
+      "xl": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{fontFamily.primary}",
+          "fontWeight": "{fontWeight.medium}",
+          "lineHeight": "{lineHeight.small}",
+          "fontSize": "{fontSize.1000}",
+          "letterSpacing": "{letterSpacing.contracted}"
+        }
+      },
+      "l": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{fontFamily.primary}",
+          "fontWeight": "{fontWeight.medium}",
+          "lineHeight": "{lineHeight.small}",
+          "fontSize": "{fontSize.900}",
+          "letterSpacing": "{letterSpacing.contracted}"
+        }
+      },
+      "m": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{fontFamily.primary}",
+          "fontWeight": "{fontWeight.medium}",
+          "lineHeight": "{lineHeight.small}",
+          "fontSize": "{fontSize.600}",
+          "letterSpacing": "{letterSpacing.contracted}"
+        }
+      }
+    },
+    "body": {
+      "l": {
+        "default": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fontFamily.secondary}",
+            "fontWeight": "{fontWeight.light}",
+            "lineHeight": "{lineHeight.medium}",
+            "fontSize": "{fontSize.400}",
+            "letterSpacing": "{letterSpacing.default}"
+          }
+        },
+        "strong": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fontFamily.secondary}",
+            "fontWeight": "{fontWeight.medium}",
+            "lineHeight": "{lineHeight.medium}",
+            "fontSize": "{fontSize.400}",
+            "letterSpacing": "{letterSpacing.default}"
+          }
+        }
+      },
+      "m": {
+        "default": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fontFamily.secondary}",
+            "fontWeight": "{fontWeight.light}",
+            "lineHeight": "{lineHeight.medium}",
+            "fontSize": "{fontSize.100}",
+            "letterSpacing": "{letterSpacing.default}"
+          }
+        },
+        "strong": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fontFamily.secondary}",
+            "fontWeight": "{fontWeight.medium}",
+            "lineHeight": "{lineHeight.medium}",
+            "fontSize": "{fontSize.100}",
+            "letterSpacing": "{letterSpacing.default}"
+          }
+        }
+      }
+    },
+    "caption": {
+      "m": {
+        "default": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fontFamily.secondary}",
+            "fontWeight": "{fontWeight.light}",
+            "lineHeight": "{lineHeight.medium}",
+            "fontSize": "{fontSize.90}",
+            "letterSpacing": "{letterSpacing.default}"
+          }
+        },
+        "strong": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fontFamily.secondary}",
+            "fontWeight": "{fontWeight.medium}",
+            "lineHeight": "{lineHeight.medium}",
+            "fontSize": "{fontSize.90}",
+            "letterSpacing": "{letterSpacing.default}"
+          }
+        },
+        "uppercase": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fontFamily.primary}",
+            "fontWeight": "{fontWeight.medium}",
+            "lineHeight": "{lineHeight.medium}",
+            "fontSize": "{fontSize.90}",
+            "letterSpacing": "{letterSpacing.expanded}",
+            "textCase": "{textCase.uppercase}"
+          }
+        },
+        "underline": {
+          "$type": "typography",
+          "$value": {
+            "fontFamily": "{fontFamily.secondary}",
+            "fontWeight": "{fontWeight.light}",
+            "lineHeight": "{lineHeight.medium}",
+            "fontSize": "{fontSize.90}",
+            "letterSpacing": "{letterSpacing.default}",
+            "textDecoration": "{textDecoration.underline}"
+          }
+        }
+      }
+    }
+  }
+}
