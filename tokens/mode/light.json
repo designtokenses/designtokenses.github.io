@@ -51,25 +51,25 @@
           "$value": "{color.palette.accent.400}"
         }
       }
-    }
-  },
-  "states": {
-    "background": {
-      "accent-hover": {
-        "$type": "color",
-        "$value": "{color.palette.accent.800}"
-      },
-      "accent-light-hover": {
-        "$type": "color",
-        "$value": "{color.palette.accent.200}"
-      },
-      "accent-active": {
-        "$type": "color",
-        "$value": "{color.palette.accent.900}"
-      },
-      "accent-light-active": {
-        "$type": "color",
-        "$value": "{color.palette.accent.300}"
+    },
+    "states": {
+      "background": {
+        "accent-hover": {
+          "$type": "color",
+          "$value": "{color.palette.accent.800}"
+        },
+        "accent-light-hover": {
+          "$type": "color",
+          "$value": "{color.palette.accent.200}"
+        },
+        "accent-active": {
+          "$type": "color",
+          "$value": "{color.palette.accent.900}"
+        },
+        "accent-light-active": {
+          "$type": "color",
+          "$value": "{color.palette.accent.300}"
+        }
       }
     }
   },

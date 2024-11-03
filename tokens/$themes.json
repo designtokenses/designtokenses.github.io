@@ -3,8 +3,6 @@
     "id": "83c52ead42ca0eeaa4102cc47eaf0d319edc6b7a",
     "name": "light",
     "$figmaStyleReferences": {
-      "states.background.accent-hover": "S:532cac4238a6c70aa42eded4cbddef991d683eb2,",
-      "states.background.accent-active": "S:a00f03b6b676d2ca918485f4abe439d6b7ef94fb,",
       "color.core.content.primary": "S:0b7f14696b6fa5c540d8f8126d1789a8b69de2cb,",
       "color.core.content.secondary": "S:b44e50010bff13f5bb98309eaf1ae150657ed6ba,",
       "color.core.content.inverse": "S:e76dbedce9126f8103718421846cfb73584ad623,",
@@ -15,7 +13,9 @@
       "color.core.background.accent": "S:291b7eaefe41f304199f18bf60533eb917547f55,",
       "color.core.border.accent": "S:f48b3d3510634c864382cbf8cf6a56adc9ccb16a,",
       "color.core.background.accent-light": "S:3f8e027f6673f0b466f8bdd512ee4c3eccb308e1,",
-      "color.core.border.primary": "S:bfaf75f75af5cc561cdeba4419f56de612c0ba94,"
+      "color.core.border.primary": "S:bfaf75f75af5cc561cdeba4419f56de612c0ba94,",
+      "color.states.background.accent-hover": "S:532cac4238a6c70aa42eded4cbddef991d683eb2,",
+      "color.states.background.accent-active": "S:a00f03b6b676d2ca918485f4abe439d6b7ef94fb,"
     },
     "selectedTokenSets": {
       "palette": "source",
@@ -26,10 +26,6 @@
     "$figmaCollectionId": "VariableCollectionId:3:384",
     "$figmaModeId": "3:0",
     "$figmaVariableReferences": {
-      "states.background.accent-hover": "72d0964959c5e1b21998c1a22d3f91a4d04ce4e9",
-      "states.background.accent-light-hover": "d482e6a433d5b6d7f29d87b19f5cc1bc875b4f7e",
-      "states.background.accent-active": "af647abb7203a12b9d826c7f5a3d34d0a090f1ae",
-      "states.background.accent-light-active": "f3f5d35cdf1b016003ef2cbda8e64f3f28dbf955",
       "color.core.content.primary": "9f221ea9f0b66da6b7c92db8dc4353243faf7000",
       "color.core.content.secondary": "fd67584c4fc2d750e459f9ed9f9295feb5f7c4e5",
       "color.core.content.inverse": "9f0c3a6f89c592ad2d813fe3525b0cfabd4a169a",
@@ -40,7 +36,11 @@
       "color.core.background.accent": "9d04334c394dd21313ab31b06a1a7041e1ea918a",
       "color.core.background.accent-light": "52662a9ae2e1b2579d0e822de6ac5118e091ecdb",
       "color.core.border.primary": "87353195834648159766a8af68458aacd4f3d4f5",
-      "color.core.border.accent": "95759a73ec9ab1143962fca952f1aaa68f8b9178"
+      "color.core.border.accent": "95759a73ec9ab1143962fca952f1aaa68f8b9178",
+      "color.states.background.accent-hover": "72d0964959c5e1b21998c1a22d3f91a4d04ce4e9",
+      "color.states.background.accent-light-hover": "d482e6a433d5b6d7f29d87b19f5cc1bc875b4f7e",
+      "color.states.background.accent-active": "af647abb7203a12b9d826c7f5a3d34d0a090f1ae",
+      "color.states.background.accent-light-active": "f3f5d35cdf1b016003ef2cbda8e64f3f28dbf955"
     },
     "group": "mode"
   },
@@ -48,8 +48,6 @@
     "id": "d104b20e6880a13be2ebf9f87b283b039c9fe2f4",
     "name": "dark",
     "$figmaStyleReferences": {
-      "states.background.accent-hover": "S:532cac4238a6c70aa42eded4cbddef991d683eb2,",
-      "states.background.accent-active": "S:a00f03b6b676d2ca918485f4abe439d6b7ef94fb,",
       "color.yellow.100": "S:575f2c8389a2bafe7cab93ef2686566350857a60,",
       "color.yellow.200": "S:a9f6ad6b8f01b8cf615f6ec5d665852d6f553ce9,",
       "color.yellow.300": "S:a185acb5503abc8a6e979cd90e4250617050e774,",
@@ -59,8 +57,6 @@
       "color.yellow.700": "S:ae4a70e8a1c34a4b7a2132c2c8698c70cde8a47e,",
       "color.yellow.800": "S:15bcc7d47fe3396ad33d9b11ee0038ab671604b1,",
       "color.yellow.900": "S:77c2eddcf0ed07778cb0c0536d79eb1802cb86a3,",
-      "states.background.accent-light-hover": "S:048ff8e6bdf3d7519b6e189b7d3a60fd1966ca8f,",
-      "states.background.accent-light-active": "S:148d9ef621c6306b623dfc1f08f650f30499978d,",
       "color.palette.white": "S:c86b96605ab355b22b2410f1e2d1332a50668335,",
       "color.palette.accent.50": "S:90714890ec9cf0cd50909499c758440fa85b35ac,",
       "color.palette.accent.100": "S:23fca52b7ea8ce7b47e6fd932fe93eca759f84fe,",
@@ -120,7 +116,11 @@
       "color.core.background.accent": "S:291b7eaefe41f304199f18bf60533eb917547f55,",
       "color.core.border.accent": "S:f48b3d3510634c864382cbf8cf6a56adc9ccb16a,",
       "color.core.background.accent-light": "S:3f8e027f6673f0b466f8bdd512ee4c3eccb308e1,",
-      "color.core.border.primary": "S:bfaf75f75af5cc561cdeba4419f56de612c0ba94,"
+      "color.core.border.primary": "S:bfaf75f75af5cc561cdeba4419f56de612c0ba94,",
+      "color.states.background.accent-hover": "S:532cac4238a6c70aa42eded4cbddef991d683eb2,",
+      "color.states.background.accent-active": "S:a00f03b6b676d2ca918485f4abe439d6b7ef94fb,",
+      "color.states.background.accent-light-hover": "S:048ff8e6bdf3d7519b6e189b7d3a60fd1966ca8f,",
+      "color.states.background.accent-light-active": "S:148d9ef621c6306b623dfc1f08f650f30499978d,"
     },
     "selectedTokenSets": {
       "palette": "source",
@@ -131,10 +131,6 @@
     "$figmaCollectionId": "VariableCollectionId:3:384",
     "$figmaModeId": "3:1",
     "$figmaVariableReferences": {
-      "states.background.accent-hover": "72d0964959c5e1b21998c1a22d3f91a4d04ce4e9",
-      "states.background.accent-light-hover": "d482e6a433d5b6d7f29d87b19f5cc1bc875b4f7e",
-      "states.background.accent-active": "af647abb7203a12b9d826c7f5a3d34d0a090f1ae",
-      "states.background.accent-light-active": "f3f5d35cdf1b016003ef2cbda8e64f3f28dbf955",
       "color.core.content.primary": "9f221ea9f0b66da6b7c92db8dc4353243faf7000",
       "color.core.content.secondary": "fd67584c4fc2d750e459f9ed9f9295feb5f7c4e5",
       "color.core.content.inverse": "9f0c3a6f89c592ad2d813fe3525b0cfabd4a169a",
@@ -145,7 +141,11 @@
       "color.core.background.accent": "9d04334c394dd21313ab31b06a1a7041e1ea918a",
       "color.core.background.accent-light": "52662a9ae2e1b2579d0e822de6ac5118e091ecdb",
       "color.core.border.primary": "87353195834648159766a8af68458aacd4f3d4f5",
-      "color.core.border.accent": "95759a73ec9ab1143962fca952f1aaa68f8b9178"
+      "color.core.border.accent": "95759a73ec9ab1143962fca952f1aaa68f8b9178",
+      "color.states.background.accent-hover": "72d0964959c5e1b21998c1a22d3f91a4d04ce4e9",
+      "color.states.background.accent-light-hover": "d482e6a433d5b6d7f29d87b19f5cc1bc875b4f7e",
+      "color.states.background.accent-active": "af647abb7203a12b9d826c7f5a3d34d0a090f1ae",
+      "color.states.background.accent-light-active": "f3f5d35cdf1b016003ef2cbda8e64f3f28dbf955"
     },
     "group": "mode"
   },
